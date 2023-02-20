@@ -15,6 +15,14 @@ function pluck(array, propiedad) {
 
   // Tu código acá:
 
+  let resultado = [];
+
+  array.forEach(element => {
+    if (element.hasOwnProperty(propiedad)) {
+      resultado.push(element[propiedad]);
+    }
+  });
+  return resultado;
 }
 
 // No modifiques nada debajo de esta linea //
